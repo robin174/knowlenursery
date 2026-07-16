@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+/* Initial sizing - set in 'helpers' - '_variables.scss' */
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Larger than mobile */
+@media (min-width: $media-mobile) {}
+
+/* Larger than small tablet */
+@media (min-width: $media-tablet) {}
+
+/* Larger than tablet */
+@media (min-width: $media-desktop) {}
+
+/* Larger than desktop */
+@media (min-width: $media-wide) {}
+
+a {
+	transition: 0.3s;
+}
+
+@media (min-width: 1400px) {
+	.container-fluid {
+		padding: 0 180px;
+	}
+}

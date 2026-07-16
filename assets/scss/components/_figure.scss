@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+
+figure {
+	margin: 0;
+	padding: 0;
+	& .border-shadow {
+		border: 5px solid white;
+		box-shadow: $box--shadow-light;
+		margin-bottom: 6px;
+	}
+	margin-bottom: 15px; 
+	& figcaption.caption {
+		font-size: 0.8rem;
+		font-weight: 500;
+		margin-bottom: 3px;
+	}
+}

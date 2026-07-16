@@ -1,0 +1,134 @@
+/* Colors
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$color--primary: #51B0CB;
+$color--secondary: #93B278;
+$color--tertiary: #AFA0BB;
+$color--quaternary: #EEDC4B;
+$color--white: #fff; // white
+$color--black: #000; // black
+
+$color--highlight-light: $color--secondary;
+$color--highlight-dark: $color--secondary;
+
+$box--shadow-light: 0 0 10px rgba(0,0,0,0.3); 
+$box--shadow-dark: 0 0 10px rgba(0,0,0,0.7); 
+
+$transition--speed: 0.3s;
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+$media-mobile: 576px;
+$media-tablet: 768px;
+$media-desktop: 992px;
+$media-wide: 1200px; 
+
+/* Fonts
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+// Titillium for headings, sub headings, Work Sans for body copy
+
+$brand--font-reg: 400;
+$brand--font-semi: 600;
+$brand--font-bold: 700;
+
+/* Variable Font Sizes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Body font size. By default 16px, based on 16px as 'root em' */
+$brand--font-size: 1rem;
+
+/* Major second scale progression - see https://type-scale.com/ */
+$brand--header-scale: 1.125;
+
+/* Line height is set to the "Golden ratio" for optimal legibility */
+$brand--line-height: 1.618;
+
+body {
+    font-family: "Work Sans", sans-serif; // Work Sans
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+strong {
+    font-weight: 500;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-weight: $brand--font-semi; // Titillium
+}
+
+h4, h5, h6 {
+    font-weight: $brand--font-reg; // Titillium
+}
+
+h5 {
+    font-weight: $brand--font-semi; // Titillium
+}
+
+h1 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h2 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h3 {
+    font-size: $brand--font-size * $brand--header-scale * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h4 {
+    font-size: $brand--font-size * $brand--header-scale;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h5 {
+    font-size: $brand--font-size;
+    //margin-bottom: $brand--line-height * 1.5rem;
+}
+
+h6 {
+    font-size: calc($brand--font-size / $brand--header-scale);
+    //margin-bottom: $brand--line-height* 1.5rem;
+}
+
+
+/* Initial sizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*  NOTE. html is set to 62.5% so that all the REM measurements throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px */
+/*  NOTE. If normal, 100% equals 16px sizing. */
+html {
+    font-size: 100%; 
+}
+
+body {
+	color: $color--tertiary;
+	font-size: 1em; /* currently ems because Chrome bug misinterpreting rems on body element */
+}
+
+$base-value: 1rem; // To test: rems/ems/px
+
+$margin--small: $base-value;
+$margin--general: $base-value*2;
+$padding--small: $base-value;
+$padding--general: $base-value*2;
+
+/* Mixins
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@mixin headingUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-weight: $brand--font-bold;
+}
+
+@mixin navigationUC {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-weight: $brand--font-semi;
+}

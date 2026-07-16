@@ -1,0 +1,50 @@
+@use '../helpers' as *;
+@use 'sass:color';
+
+a[class*="atm--button-"] {
+	text-decoration: none;
+	& i {
+		transition: 0.4s;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.atm--button-main {
+	padding: 12px 28px;
+	padding-right: 40px;
+	background-color: color.scale($color--primary, $lightness: 6%);
+	& span {
+		letter-spacing: 0.02em;
+		color: white;
+	}
+	& i {
+		color: $color--secondary;
+		margin-left: 12px;
+	}
+	&:hover {
+		background-color: $color--primary;
+		& i {
+			transform: translate(12px,0);
+		}
+	}
+}
+
+.atm--button-square-i {
+	
+	height: 50px;
+	width: 50px;
+	background-color: color.scale($color--primary, $lightness: 6%);
+	& i {
+		color: $color--secondary;
+	}
+	&:hover {
+		background-color: $color--primary;
+		& i {
+			transform: translate(6px,0);
+		}
+	}
+}
+
+// on mobile - have the icon, move back and forth after a delay (if in view), so back and forth every 10 seconds

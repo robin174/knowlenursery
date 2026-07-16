@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+@use 'sass:color';
+
+h1 {
+	color: $color--primary;
+	font-size: 2.4rem;
+}
+
+h2 {
+	color: $color--secondary;
+	font-size: 1.8rem;
+}
+
+h3 {
+	color: $color--secondary;
+	font-size: 1.4rem;
+}
+
+h5 {
+	color: $color--primary;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.ut--uc {
+	@include headingUC;
+}
+
+p {
+	&.introduction {
+		font-weight: 500;
+	}
+	&.copyright {
+		font-size: 0.8rem;
+		margin-bottom: 3px;
+	}
+}
+
+a {
+	transition: $transition--speed;
+	color: $color--secondary;
+	&:hover {
+		color: color.scale($color--secondary, $lightness: -20%);
+	}
+}

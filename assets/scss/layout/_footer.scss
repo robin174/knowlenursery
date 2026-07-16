@@ -1,0 +1,7 @@
+@use '../helpers' as *;
+@use 'sass:math';
+
+footer {
+	background-repeat: repeat;
+	padding: $padding--general 0;
+}
