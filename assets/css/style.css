@@ -371,6 +371,7 @@ nav a:disabled, nav .nav-link:disabled {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
   }
   .offcanvas.offcanvas-end .offcanvas-header button.btn-close svg {
     color: #fff;
