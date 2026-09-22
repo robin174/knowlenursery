@@ -44,13 +44,24 @@
 					*/ ?>
 
 					<div class="d-md-none">
-						<button class="btn btn-primary atmButtonNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
+						<button class="btn btn-primary atmButtonNav" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+							<svg class="icon icon-bars" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+								<line x1="3" y1="6" x2="21" y2="6"></line>
+								<line x1="3" y1="12" x2="21" y2="12"></line>
+								<line x1="3" y1="18" x2="21" y2="18"></line>
+							</svg>
+						</button>
 					</div>
 					
 					<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 					 	<div class="offcanvas-header">
-					    	<h2 id="offcanvasRightLabel">Logo</h2>
-							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-lg fa-times"></i></button>
+					    	<h2 id="offcanvasRightLabel" class="visually-hidden">Menu</h2>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+								<svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+									<line x1="6" y1="6" x2="18" y2="18"></line>
+									<line x1="6" y1="18" x2="18" y2="6"></line>
+								</svg>
+							</button>
 					 	</div>
 						<div class="offcanvas-body">
 							<?php knowlenursery26_nav(); ?>

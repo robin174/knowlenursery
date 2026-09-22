@@ -86,5 +86,22 @@ if ( ! function_exists( 'knowlenursery26_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'knowlenursery26_setup');
 
+// ---
+// Custom Admin Logo
+// -------------------------------------------------------------
+function knowle26_login_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/use-logo-kns-admin-400.png);
+            padding-bottom: 2px;
+            -webkit-background-size: 300px 90px;
+            background-size: 300px 90px;
+            height: 90px;
+            width: 300px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'knowle26_login_logo' );
+
 /* Load custom WordPress nav walker */
 require_once THEME_DIR_PATH . '/includes/wp-bootstrap-navwalker.php';

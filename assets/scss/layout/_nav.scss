@@ -8,6 +8,12 @@ $bp--xlarge: 1200px; // navbar-expand-xl
 // Set breakpoint for navigation from header.php e.g.
 $breakpoint--navigation: $bp--medium;
 
+.icon {
+	width: 1.2em;
+	height: 1.2em;
+	display: block;
+}
+
 nav a {
 	@include headingUC;
 	color: rgba($color--white, 0.66);
@@ -65,24 +71,33 @@ nav {
 .navbar button.atmButtonNav {
 	background-color: rgba(255,255,255,0.06);
 	border: 2px solid rgba(255,255,255,0.12);
-	& i {
+	transition: $transition--speed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& svg {
 		color: $color--white;
-	} 
+		transition: $transition--speed;
+	}
 	&:hover {
-		color: red;
+		background-color: rgba(255,255,255,0.12);
+		& svg {
+			color: $color--secondary;
+		}
 	}
 }
 
-// All the above needs to be converted to the below. What is small -> medium,  what is medium -> x-large.
 // Menu -> Medium: mobile version (off canvas)
 @media (max-width: $breakpoint--navigation - 1px){
 	.offcanvas.offcanvas-end {
 		backdrop-filter: blur(7px);
-		background-color: rgba(#111,0.8);
+		background-color: rgba($color--primary, 0.96);
 		color: $color--white;
-		border-left: 5px solid black;
+		border-left: 5px solid $color--secondary;
 		& h2 {
-			color: white;
+			@include headingUC;
+			font-size: 0.9rem;
+			color: $color--white;
 		}
 		& .offcanvas-header {
 			padding-top: 40px;
@@ -95,15 +110,16 @@ nav {
 		& li.menu-item {
 			padding: 10px 0;
 			padding-left: 30px;
-			border-left: 7px solid $color--black;
-			background-color: rgba(0,0,0,0.2);
+			border-left: 7px solid rgba($color--black, 0.15);
+			background-color: rgba($color--black, 0.15);
+			transition: $transition--speed;
 			&:hover {
-				background-color: rgba(0,0,0,0.5);
+				background-color: rgba($color--black, 0.3);
 				border-left: 7px solid $color--secondary;
 			}
 		}
 		& li.current-menu-item, li.current-menu-item:hover {
-			background-color: rgba(0,0,0,1);
+			background-color: rgba($color--black, 0.35);
 			border-left: 7px solid $color--secondary;
 			&:hover {
 				color: $color--white;
@@ -111,13 +127,22 @@ nav {
 			}
 		}
 		& .offcanvas-header button.btn-close {
-			background: unset;
+			background-color: rgba($color--white, 0.06);
+			background-image: none;
+			border: 2px solid rgba($color--white, 0.12);
 			opacity: unset;
-			background: yellow;
-			& i {
-				color: green;
-				&:hover {
-					color: orange;
+			transition: $transition--speed;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& svg {
+				color: $color--white;
+				transition: $transition--speed;
+			}
+			&:hover {
+				background-color: rgba($color--white, 0.12);
+				& svg {
+					color: $color--secondary;
 				}
 			}
 		}

@@ -103,11 +103,24 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/images\/header-test.png" : {
+    "\/assets\/images\/knowle-icon-quote.png" : {
       "ft" : 32768,
-      "iS" : 862506,
+      "iS" : 629,
       "oA" : 0,
-      "oAP" : "\/assets\/images\/header-test.png",
+      "oAP" : "\/assets\/images\/knowle-icon-quote.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/images\/use-logo-kns-admin-400.png" : {
+      "ft" : 32768,
+      "iS" : 7062,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/use-logo-kns-admin-400.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -115,16 +128,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/assets\/images\/logo-greenhouse-v2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/images\/logo-greenhouse-v2.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/assets\/scss\/base\/_body.scss" : {
       "aP" : 0,
@@ -423,6 +426,25 @@
       "oA" : 0,
       "oAP" : "\/page.php",
       "oF" : 0
+    },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
     },
     "\/readme.txt" : {
       "cB" : 0,

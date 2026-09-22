@@ -123,7 +123,7 @@
         <div class="row">
             <div class="col-1">
                 <figure>
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/knowle-icon-quote.png" alt="Quote Icon">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/knowle-icon-quote.png" alt="Quote Icon">
                 </figure>
             </div>
             <div class="col-11">
