@@ -393,15 +393,9 @@ nav a:disabled, nav .nav-link:disabled {
   }
 }
 .templ--page-main {
-  margin: 0;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
-@media (min-width: 576px) {
-  .templ--page-main {
-    margin: 2rem 0;
-  }
-}
 @media (min-width: 768px) {
   .templ--page-main {
     margin: 4rem 0;

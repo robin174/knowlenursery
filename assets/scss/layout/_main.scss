@@ -2,14 +2,7 @@
 @use 'sass:color';
 
 .templ--page-main {
-	margin: 0; // No need for margin as PNG includes padding 
-	margin-bottom: $margin--general;
-}
-
-@media (min-width: $media-mobile) {
-	.templ--page-main {
-		margin: $margin--general 0;
-	}
+	margin: $margin--general 0;
 }
 
 @media (min-width: $media-tablet) {
