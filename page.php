@@ -10,7 +10,7 @@ get_header(); ?>
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-10 col-lg-12">
-				<div>
+				<div class="mt-2 mt-md-1">
                     <figure>
                         <img src="<?php the_field('kns_logo', 'option'); ?>" class="img-fluid">   
                     </figure>
