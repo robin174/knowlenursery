@@ -128,7 +128,7 @@
             </div>
             <div class="col-11">
                 <div class="spoken">
-                    <p><?php the_sub_field('spoken'); ?></p><!-- Tweak HTML tag from H5 -->
+                    <p class="ms-4 ms-md-3 ms-lg-2"><?php the_sub_field('spoken'); ?></p><!-- Tweak HTML tag from H5 -->
                 </div>
             </div>
         </div><!-- end .row -->

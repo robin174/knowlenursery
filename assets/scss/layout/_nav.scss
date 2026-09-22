@@ -6,7 +6,7 @@ $bp--large: 992px; // navbar-expand-lg
 $bp--xlarge: 1200px; // navbar-expand-xl
 
 // Set breakpoint for navigation from header.php e.g.
-$breakpoint--navigation: $bp--medium;
+$breakpoint--navigation: $bp--large;
 
 .icon {
 	width: 1.2em;
